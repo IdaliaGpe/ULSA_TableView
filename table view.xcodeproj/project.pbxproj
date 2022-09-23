@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		3DAFB0CC28DDF7FB00AFA60C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAFB0CB28DDF7FB00AFA60C /* AppDelegate.swift */; };
 		3DAFB0CE28DDF7FB00AFA60C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAFB0CD28DDF7FB00AFA60C /* SceneDelegate.swift */; };
-		3DAFB0D028DDF7FB00AFA60C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAFB0CF28DDF7FB00AFA60C /* ViewController.swift */; };
+		3DAFB0D028DDF7FB00AFA60C /* PeliculasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAFB0CF28DDF7FB00AFA60C /* PeliculasController.swift */; };
 		3DAFB0D328DDF7FB00AFA60C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAFB0D128DDF7FB00AFA60C /* Main.storyboard */; };
 		3DAFB0D528DDF80400AFA60C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DAFB0D428DDF80400AFA60C /* Assets.xcassets */; };
 		3DAFB0D828DDF80400AFA60C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAFB0D628DDF80400AFA60C /* LaunchScreen.storyboard */; };
 		3DAFB0E328DDF80400AFA60C /* table_viewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAFB0E228DDF80400AFA60C /* table_viewTests.swift */; };
 		3DAFB0EE28DDF80400AFA60C /* table_viewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAFB0ED28DDF80400AFA60C /* table_viewUITests.swift */; };
+		3DAFB0FC28DDFAF700AFA60C /* Pelicula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAFB0FB28DDFAF700AFA60C /* Pelicula.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,7 @@
 		3DAFB0C828DDF7FB00AFA60C /* table view.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "table view.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DAFB0CB28DDF7FB00AFA60C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DAFB0CD28DDF7FB00AFA60C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3DAFB0CF28DDF7FB00AFA60C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DAFB0CF28DDF7FB00AFA60C /* PeliculasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeliculasController.swift; sourceTree = "<group>"; };
 		3DAFB0D228DDF7FB00AFA60C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DAFB0D428DDF80400AFA60C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DAFB0D728DDF80400AFA60C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		3DAFB0E928DDF80400AFA60C /* table viewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "table viewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DAFB0ED28DDF80400AFA60C /* table_viewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = table_viewUITests.swift; sourceTree = "<group>"; };
 		3DAFB0EF28DDF80400AFA60C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DAFB0FB28DDFAF700AFA60C /* Pelicula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pelicula.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,11 @@
 		3DAFB0CA28DDF7FB00AFA60C /* table view */ = {
 			isa = PBXGroup;
 			children = (
-				3DAFB0CB28DDF7FB00AFA60C /* AppDelegate.swift */,
-				3DAFB0CD28DDF7FB00AFA60C /* SceneDelegate.swift */,
-				3DAFB0CF28DDF7FB00AFA60C /* ViewController.swift */,
-				3DAFB0D128DDF7FB00AFA60C /* Main.storyboard */,
-				3DAFB0D428DDF80400AFA60C /* Assets.xcassets */,
-				3DAFB0D628DDF80400AFA60C /* LaunchScreen.storyboard */,
-				3DAFB0D928DDF80400AFA60C /* Info.plist */,
+				3DAFB10428DE0AB500AFA60C /* Recursos */,
+				3DAFB10228DE0A7B00AFA60C /* App */,
+				3DAFB10628DE0AE100AFA60C /* Vistas */,
+				3DAFB10328DE0A9800AFA60C /* Controladores */,
+				3DAFB10528DE0ACB00AFA60C /* Modelos */,
 			);
 			path = "table view";
 			sourceTree = "<group>";
@@ -126,6 +126,49 @@
 				3DAFB0EF28DDF80400AFA60C /* Info.plist */,
 			);
 			path = "table viewUITests";
+			sourceTree = "<group>";
+		};
+		3DAFB10228DE0A7B00AFA60C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3DAFB0D928DDF80400AFA60C /* Info.plist */,
+				3DAFB0CB28DDF7FB00AFA60C /* AppDelegate.swift */,
+				3DAFB0CD28DDF7FB00AFA60C /* SceneDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		3DAFB10328DE0A9800AFA60C /* Controladores */ = {
+			isa = PBXGroup;
+			children = (
+				3DAFB0CF28DDF7FB00AFA60C /* PeliculasController.swift */,
+			);
+			name = Controladores;
+			sourceTree = "<group>";
+		};
+		3DAFB10428DE0AB500AFA60C /* Recursos */ = {
+			isa = PBXGroup;
+			children = (
+				3DAFB0D428DDF80400AFA60C /* Assets.xcassets */,
+			);
+			name = Recursos;
+			sourceTree = "<group>";
+		};
+		3DAFB10528DE0ACB00AFA60C /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				3DAFB0FB28DDFAF700AFA60C /* Pelicula.swift */,
+			);
+			name = Modelos;
+			sourceTree = "<group>";
+		};
+		3DAFB10628DE0AE100AFA60C /* Vistas */ = {
+			isa = PBXGroup;
+			children = (
+				3DAFB0D128DDF7FB00AFA60C /* Main.storyboard */,
+				3DAFB0D628DDF80400AFA60C /* LaunchScreen.storyboard */,
+			);
+			name = Vistas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +302,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DAFB0D028DDF7FB00AFA60C /* ViewController.swift in Sources */,
+				3DAFB0FC28DDFAF700AFA60C /* Pelicula.swift in Sources */,
+				3DAFB0D028DDF7FB00AFA60C /* PeliculasController.swift in Sources */,
 				3DAFB0CC28DDF7FB00AFA60C /* AppDelegate.swift in Sources */,
 				3DAFB0CE28DDF7FB00AFA60C /* SceneDelegate.swift in Sources */,
 			);
