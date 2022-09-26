@@ -83,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="896" y="141"/>
         </scene>
-        <!--View Controller-->
+        <!--Detalles Pelicula Controller-->
         <scene sceneID="65d-If-ubM">
             <objects>
-                <viewController id="u1A-3y-aat" sceneMemberID="viewController">
+                <viewController id="u1A-3y-aat" customClass="DetallesPeliculaController" customModule="table_view" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qir-RG-IGa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
