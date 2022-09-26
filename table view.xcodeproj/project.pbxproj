@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D10655628E1EDB700A81EDA /* CeldaPeliculaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D10655528E1EDB700A81EDA /* CeldaPeliculaController.swift */; };
 		3DAFB0CC28DDF7FB00AFA60C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAFB0CB28DDF7FB00AFA60C /* AppDelegate.swift */; };
 		3DAFB0CE28DDF7FB00AFA60C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAFB0CD28DDF7FB00AFA60C /* SceneDelegate.swift */; };
 		3DAFB0D028DDF7FB00AFA60C /* PeliculasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAFB0CF28DDF7FB00AFA60C /* PeliculasController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D10655528E1EDB700A81EDA /* CeldaPeliculaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaPeliculaController.swift; sourceTree = "<group>"; };
 		3DAFB0C828DDF7FB00AFA60C /* table view.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "table view.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DAFB0CB28DDF7FB00AFA60C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DAFB0CD28DDF7FB00AFA60C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				3DAFB0CF28DDF7FB00AFA60C /* PeliculasController.swift */,
+				3D10655528E1EDB700A81EDA /* CeldaPeliculaController.swift */,
 			);
 			name = Controladores;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				3DAFB0D028DDF7FB00AFA60C /* PeliculasController.swift in Sources */,
 				3DAFB0CC28DDF7FB00AFA60C /* AppDelegate.swift in Sources */,
 				3DAFB0CE28DDF7FB00AFA60C /* SceneDelegate.swift in Sources */,
+				3D10655628E1EDB700A81EDA /* CeldaPeliculaController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

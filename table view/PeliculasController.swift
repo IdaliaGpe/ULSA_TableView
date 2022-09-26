@@ -17,7 +17,7 @@ class PeliculasController: UIViewController, UITableViewDelegate, UITableViewDat
         // Do any additional setup after loading the vi
         
         peliculas.append(Pelicula(titulo: "Titanic", año: "1997", director: "James Cameron", genero: "Drama"))
-        peliculas.append(Pelicula(titulo: "Chabel y Pepito contra los montruos", año: "1973", director: "Jose Estrada", genero: "Comedia"))
+        peliculas.append(Pelicula(titulo: "Chabelo y Pepito contra los montruos", año: "1973", director: "Jose Estrada", genero: "Comedia"))
         peliculas.append(Pelicula(titulo: "Vacaciones de terror", año: "1989", director: "Rene Cardona", genero: "Terror"))
     }
 
@@ -31,8 +31,14 @@ class PeliculasController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         
-        let celda = tableView.dequeueReusableCell(withIdentifier: "celdaPelicula")
-        return celda!
+        let celda = tableView.dequeueReusableCell(withIdentifier: "celdaPelicula") as!
+        CeldaPeliculaController
+        
+        celda.lblDirector.text = peliculas[indexPath.row].director
+        celda.lblTitulo.text = peliculas[indexPath.row].titulo
+        celda.lblAño.text = peliculas[indexPath.row].año
+        
+        return celda
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
