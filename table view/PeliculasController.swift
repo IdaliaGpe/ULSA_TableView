@@ -11,14 +11,23 @@ import UIKit
 class PeliculasController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var peliculas : [Pelicula] = []
+    var personaje : [Personaje] = []
+    
+    @IBOutlet weak var lblTvPeliculas: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the vi
         
         peliculas.append(Pelicula(titulo: "Titanic", año: "1997", director: "James Cameron", genero: "Drama"))
-        peliculas.append(Pelicula(titulo: "Chabelo y Pepito contra los montruos", año: "1973", director: "Jose Estrada", genero: "Comedia"))
-        peliculas.append(Pelicula(titulo: "Vacaciones de terror", año: "1989", director: "Rene Cardona", genero: "Terror"))
+        personaje.append(Personaje(nombre: "Pato", interprete: "toto"))
+        
+        peliculas.append(Pelicula(titulo: "Chabelo y Pepito contra los Montruos", año: "1973", director: "Jose Estrada", genero: "Comedia"))
+        personaje.append(Personaje(nombre: "dodo", interprete: "pepe"))
+        
+        peliculas.append(Pelicula(titulo: "Vacaciones de Terror", año: "1989", director: "Rene Cardona", genero: "Terror"))
+        personaje.append(Personaje(nombre: "hola", interprete: "coco"))
+    
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -47,7 +56,7 @@ class PeliculasController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destino = segue.destination as! DetallesPeliculaController
-        destino.pelicula = peliculas[0]
+        destino.pelicula = peliculas[lblTvPeliculas.indexPathForSelectedRow!.row]
     }
 }
 
