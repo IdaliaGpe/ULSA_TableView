@@ -21,8 +21,8 @@ class DetallesPeliculaController: UIViewController, UITableViewDelegate, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Peliculas
         self.title = "Titulo"
-        
         if pelicula != nil {
             self.title = pelicula?.titulo
             lblDirector.text = pelicula?.director
@@ -32,6 +32,7 @@ class DetallesPeliculaController: UIViewController, UITableViewDelegate, UITable
         
     }
     
+    //Personajes & Interpretes
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -41,7 +42,8 @@ class DetallesPeliculaController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let celda = tableView.dequeueReusableCell(withIdentifier: "celdaPersonaje") as! CeldaPersonajesController
+        
+        let celda = tableView.dequeueReusableCell(withIdentifier: "celdaPersonajes") as! CeldaPersonajesController
         
         celda.lblNombre.text = pelicula?.personajes[indexPath.row].nombre
         celda.lblInterprete.text = pelicula?.personajes[indexPath.row].interprete
