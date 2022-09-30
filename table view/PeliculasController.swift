@@ -11,7 +11,6 @@ import UIKit
 class PeliculasController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var peliculas : [Pelicula] = []
-    var personaje : [Personaje] = []
     
     @IBOutlet weak var lblTvPeliculas: UITableView!
     
@@ -20,14 +19,17 @@ class PeliculasController: UIViewController, UITableViewDelegate, UITableViewDat
         // Do any additional setup after loading the vi
         
         peliculas.append(Pelicula(titulo: "Titanic", año: "1997", director: "James Cameron", genero: "Drama"))
-        personaje.append(Personaje(nombre: "Pato", interprete: "toto"))
         
         peliculas.append(Pelicula(titulo: "Chabelo y Pepito contra los Montruos", año: "1973", director: "Jose Estrada", genero: "Comedia"))
-        personaje.append(Personaje(nombre: "dodo", interprete: "pepe"))
         
         peliculas.append(Pelicula(titulo: "Vacaciones de Terror", año: "1989", director: "Rene Cardona", genero: "Terror"))
-        personaje.append(Personaje(nombre: "hola", interprete: "coco"))
-    
+        
+        peliculas[0].personajes.append(Personaje(nombre: "Jack Dawson", interprete: "Leonardo DiCaprio"))
+        peliculas[0].personajes.append(Personaje(nombre: "Rose", interprete: "Kate Winslet"))
+        peliculas[1].personajes.append(Personaje(nombre: "Chabelo", interprete: "Xavier López"))
+        peliculas[1].personajes.append(Personaje(nombre: "Pepito", interprete: "Martín Ramos"))
+        peliculas[2].personajes.append(Personaje(nombre: "Julio", interprete: "Pedro Fernandez"))
+        peliculas[2].personajes.append(Personaje(nombre: "Paulina", interprete: "Gabriela Hassel"))
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {

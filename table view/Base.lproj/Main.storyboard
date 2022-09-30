@@ -183,6 +183,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="u1A-3y-aat" id="Nsp-Pt-cMH"/>
+                                    <outlet property="delegate" destination="u1A-3y-aat" id="2GB-PI-ltI"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -211,6 +215,7 @@
                         <outlet property="lblAño" destination="nWZ-WX-idv" id="uBt-df-lE4"/>
                         <outlet property="lblDirector" destination="whV-BD-eL5" id="qsl-yB-Q6d"/>
                         <outlet property="lblGenero" destination="9dX-ra-DEH" id="1mw-Mq-f3d"/>
+                        <outlet property="lblTvPersonajes" destination="n94-oE-cip" id="D1l-py-yrt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2gC-Fo-bEQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

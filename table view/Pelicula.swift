@@ -11,7 +11,8 @@ class Pelicula {
     var año : String
     var director : String
     var genero : String
-
+    var personajes : [Personaje] = []
+    
     init(titulo: String, año: String, director: String, genero: String) {
         self.titulo = titulo
         self.año = año
